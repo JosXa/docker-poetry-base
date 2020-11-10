@@ -10,4 +10,4 @@ RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-
 ENV PATH="/root/.poetry/bin:/opt/venv/bin:$PATH"
 RUN poetry config virtualenvs.create false
 
-python -m pip install --upgrade pip
+RUN python -m pip install --upgrade pip
