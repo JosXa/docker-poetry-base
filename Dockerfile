@@ -11,3 +11,5 @@ ENV PATH="/root/.poetry/bin:/opt/venv/bin:$PATH"
 RUN poetry config virtualenvs.create false
 
 RUN python -m pip install --upgrade pip
+
+ENV PYTHONUNBUFFERED=1
