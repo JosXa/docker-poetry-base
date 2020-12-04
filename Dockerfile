@@ -12,4 +12,7 @@ RUN poetry config virtualenvs.create false
 
 RUN python -m pip install --upgrade pip
 
+# Most of my projects use Poe as a script runner
+RUN pip install poethepoet
+
 ENV PYTHONUNBUFFERED=1
