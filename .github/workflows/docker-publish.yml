@@ -8,12 +8,8 @@ on:
 
     # Publish `v1.2.3` tags as releases.
     tags:
-      - v*
-
-  # Run tests for any PRs.
-  pull_request:
-  
-  repository_dispatch:
+      - v*  
+  workflow_dispatch:
 
 env:
   # TODO: Change variable to your image's name.
